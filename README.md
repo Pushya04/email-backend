@@ -9,15 +9,14 @@ This is a full-stack implementation of a **contact form** for a personal portfol
 
 ```
 portfolio-contact-form/
-├── frontend/                  # Hosted on Netlify
+├── frontend/                 
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
 │   └── assets/ (images, fonts, etc.)
-├── backend/                   # Hosted on Render
+├── backend/                   
 │   ├── main.py
 │   ├── requirements.txt
-│   └── pushya.env (DO NOT COMMIT)
 └── README.md
 ```
 
@@ -135,12 +134,6 @@ python -m http.server 8080
    ```
 4. Add environment variables (Render → Environment).
 5. Deploy!
-
----
-
-## 📸 Preview
-
-> Insert screenshots or animated GIFs of your contact form UI and backend docs here.
 
 ---
 
