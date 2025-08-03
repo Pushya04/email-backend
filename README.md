@@ -9,15 +9,17 @@ This is a full-stack implementation of a **contact form** for a personal portfol
 
 ```
 portfolio
-├── frontend/                 
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── assets/ (images, fonts, etc.)
-├── backend/                   
-│   ├── main.py
-│   ├── requirements.txt
-└── README.md
+├── Group 2345.png
+├── Group 2372.png
+├── Group 62.png
+├── README.md
+├── index.html
+├── index.js
+├── main.py
+├── manifest.json
+├── requirements.txt
+├── service-worker.js
+└── style.css
 ```
 
 ---
@@ -85,7 +87,6 @@ portfolio
 ### Backend
 
 ```bash
-cd backend
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -106,7 +107,6 @@ Then visit: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 You can open `index.html` directly in the browser or use a static server:
 
 ```bash
-cd frontend
 python -m http.server 8080
 # Then open http://localhost:8080
 ```
@@ -117,9 +117,9 @@ python -m http.server 8080
 
 ### 🔹 Frontend on Netlify
 
-1. Create a new Netlify project from your `frontend/` folder.
+1. Create a new Netlify project from your files.
 2. Connect it to GitHub or drag & drop manually.
-3. Make sure your `script.js` calls the correct backend URL:
+3. Make sure your `index.js` calls the correct backend URL:
    ```js
    fetch("https://email-backend-b1q5.onrender.com/send-message", {...})
    ```
@@ -127,7 +127,7 @@ python -m http.server 8080
 ### 🔸 Backend on Render
 
 1. Create a new Web Service (Python) in Render.
-2. Connect GitHub → Select `backend/` directory if necessary.
+2. Connect GitHub → Select proper repo root.
 3. Set Start Command:
    ```
    uvicorn main:app --host=0.0.0.0 --port=10000
