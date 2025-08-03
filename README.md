@@ -8,7 +8,7 @@ This is a full-stack implementation of a **contact form** for a personal portfol
 ## 📦 Project Structure
 
 ```
-portfolio-contact-form/
+portfolio
 ├── frontend/                 
 │   ├── index.html
 │   ├── style.css
